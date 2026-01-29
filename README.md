@@ -1,24 +1,5 @@
 # Applied-RAG-for-Product-Venture-Development
-1. Product Overview
-Product Name: SecurePolicy AI
 
-Target User: E-commerce Customer Support Agents and Compliance Officers
-
-Problem: Customer support teams are often overwhelmed by repetitive policy inquiries, leading to slow response times or human error in communicating high-stakes legal terms.
-
-Value Proposition: SecurePolicy AI automates the retrieval of accurate, grounded company policies. It reduces support ticket volume by providing instant answers while ensuring legal compliance through a strict governance layer that prevents "hallucinations" or off-topic advice.
-
-2. System Architecture
-Our system uses a Hybrid RAG (Retrieval-Augmented Generation) Pipeline to ensure both keyword precision and semantic understanding.
-
-Hybrid Retrieval: We combine BM25 (Keyword Search) to catch specific terms like "30 days" with FAISS (Vector Search) to understand the intent behind a user's question, even if they use different wording.
-
-Governance Layer: All retrieved documents pass through a Cross-Encoder Reranker. This layer acts as a "judge" to verify the relevance of the evidence against the query. It is critical for the venture because it ensures the AI stays silent (refuses to answer) if no verified policy matches the user's intent.
-
-To get 100% credit, your README must transition from a technical exercise to a professional venture pitch. Below is the completed content for your README, specifically filled out with the data and results from your final notebook Untitled32 (2).ipynb.
-
-🛡️ Venture Documentation: SecurePolicy AI
-1. Product Overview
 Product Name: SecurePolicy AI
 
 Target User: E-commerce Customer Support Agents and Compliance Officers
