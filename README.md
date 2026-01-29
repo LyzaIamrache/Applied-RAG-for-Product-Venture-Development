@@ -37,4 +37,4 @@ The "Real-World" Failure: During initial deployment, our governance layer was to
 
 Business Impact: This failure would lead to customer frustration, lost sales, and an increase in support tickets for issues the AI should have handled.
 
-System-Level Fix: We performed threshold tuning on the Cross-Encoder. By adjusting the reranker threshold from 0 to -5, we optimized the balance between safety and helpfulness. This allows the system to recognize semantic overlaps (like refund vs. return) while still blocking completely unrelated or dangerous queries.
+System-Level Fix: We performed threshold tuning on the Cross-Encoder. By adjusting the reranker threshold to -10, we optimized the balance between safety and helpfulness. This allows the system to recognize semantic overlaps (like refund vs. return) while still blocking completely unrelated or dangerous queries.
